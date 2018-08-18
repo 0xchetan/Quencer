@@ -52,18 +52,10 @@ def main():
 
     response= output["result"]["fulfillment"]["messages"][0]["speech"] 
 
+    print(response)
 
     get_action_name = output["result"]["action"]
 
-    language = 'en'
- 
-    myobj = gTTS(text=response, lang=language, slow=False)
- 
-    myobj.save("welcome.mp3")
- 
-    os.system("mpg123 welcome.mp3")
-
-    print("Response: "+response)
 
 
     if get_action_name == "open-app":
@@ -76,18 +68,21 @@ def main():
         parameter_value = output["result"]["parameters"]["name"]
         wiki_info = wikipedia.summary(parameter_value, sentences=1)
         print(wiki_info)
-        myobj = gTTS(text=wiki_info, lang=language, slow=False)
-        myobj.save("welcome.mp3")
-        os.system("mpg321 welcome.mp3")
+
 
 
 
 
 if __name__ == '__main__':
-    main()
+    
+
     while True:
+        main()
+
+        """
         try:
             main()
         except KeyError:
             print("I am afraid, I can't answer it")
        
+"""

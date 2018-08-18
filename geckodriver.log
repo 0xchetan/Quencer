@@ -1,0 +1,13 @@
+1527204848472	geckodriver	INFO	geckodriver 0.20.1
+1527204848484	geckodriver	INFO	Listening on 127.0.0.1:40467
+1527204848554	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.6JPxtJwmmX9b"
+1527204859766	Marionette	INFO	Listening on port 33623
+1527204859836	Marionette	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1090:3
+
+1527205026372	geckodriver	INFO	geckodriver 0.20.1
+1527205026407	geckodriver	INFO	Listening on 127.0.0.1:42675
+1527205026504	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.q5OcMRxJtQwD"
+1527205033207	Marionette	INFO	Listening on port 35213
+1527205033252	Marionette	WARN	TLS certificate errors will be ignored for this session
